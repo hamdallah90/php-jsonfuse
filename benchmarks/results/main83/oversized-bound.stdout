@@ -1,0 +1,25 @@
+ENV php=8.3.36 nts=yes debug=no
+ENV arch=x86_64 kernel=6.8.0-1064-nvidia nproc=1 mem_kb=232955408
+ENV cpu=Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz governor=unknown
+ENV compiler=cc (Debian 14.2.0-19) 14.2.0
+ENV ext_cflags=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+ENV commit=1a1fddd846756530e8307ab691bf69ef4484617d dirty_paths=0 base_image=php@sha256:628102249d93494233b54490b785f12db9cd60f4dc89416dfca15973f2125f10
+ENV jsonfuse=0.1.0-alpha.1 yyjson=0.13.0
+ENV simdjson=4.0.0 fastjson=0.10.2 json_machine=1.2.6
+ENV fixtures=docker-volume (page cache warm after first read; cold cache is NOT established) output=tmpfs
+RUNCONFIG php=8.3 runs=10 warmups=3 rss_runs=3 modes=nojit,jit impls=jsonfuse,php,simdjson,fastjson seed=20261109
+RAW kind=timed workload=oversized-bound impl=jsonfuse mode=jit run=1 warmups=3 wall_s=4.73 user_s=3.35 sys_s=1.37 maxrss_kb=28080 ns=1177603436 read=2000 matched=189 emitted=189 bytes_in=2097154000 bytes_out=5714 peak_php=16781312 opcache=1 jit_on=1 jit_used=2416 outcome=accepted out_sha=ba968fab0d89bc4f
+RAW kind=timed workload=oversized-bound impl=jsonfuse mode=jit run=2 warmups=3 wall_s=4.73 user_s=3.30 sys_s=1.43 maxrss_kb=28080 ns=1173821070 read=2000 matched=189 emitted=189 bytes_in=2097154000 bytes_out=5714 peak_php=16781312 opcache=1 jit_on=1 jit_used=2416 outcome=accepted out_sha=ba968fab0d89bc4f
+RAW kind=timed workload=oversized-bound impl=jsonfuse mode=jit run=3 warmups=3 wall_s=4.73 user_s=3.30 sys_s=1.43 maxrss_kb=27840 ns=1180814350 read=2000 matched=189 emitted=189 bytes_in=2097154000 bytes_out=5714 peak_php=16781312 opcache=1 jit_on=1 jit_used=2416 outcome=accepted out_sha=ba968fab0d89bc4f
+RAW kind=timed workload=oversized-bound impl=jsonfuse mode=jit run=4 warmups=3 wall_s=4.71 user_s=3.31 sys_s=1.40 maxrss_kb=28080 ns=1177025360 read=2000 matched=189 emitted=189 bytes_in=2097154000 bytes_out=5714 peak_php=16781312 opcache=1 jit_on=1 jit_used=2416 outcome=accepted out_sha=ba968fab0d89bc4f
+RAW kind=timed workload=oversized-bound impl=jsonfuse mode=jit run=5 warmups=3 wall_s=4.72 user_s=3.26 sys_s=1.46 maxrss_kb=28080 ns=1177896891 read=2000 matched=189 emitted=189 bytes_in=2097154000 bytes_out=5714 peak_php=16781312 opcache=1 jit_on=1 jit_used=2416 outcome=accepted out_sha=ba968fab0d89bc4f
+RAW kind=timed workload=oversized-bound impl=jsonfuse mode=jit run=6 warmups=3 wall_s=4.74 user_s=3.30 sys_s=1.43 maxrss_kb=28080 ns=1180672233 read=2000 matched=189 emitted=189 bytes_in=2097154000 bytes_out=5714 peak_php=16781312 opcache=1 jit_on=1 jit_used=2416 outcome=accepted out_sha=ba968fab0d89bc4f
+RAW kind=timed workload=oversized-bound impl=jsonfuse mode=jit run=7 warmups=3 wall_s=4.73 user_s=3.29 sys_s=1.43 maxrss_kb=28080 ns=1175133923 read=2000 matched=189 emitted=189 bytes_in=2097154000 bytes_out=5714 peak_php=16781312 opcache=1 jit_on=1 jit_used=2416 outcome=accepted out_sha=ba968fab0d89bc4f
+RAW kind=timed workload=oversized-bound impl=jsonfuse mode=jit run=8 warmups=3 wall_s=4.75 user_s=3.28 sys_s=1.47 maxrss_kb=28080 ns=1190914572 read=2000 matched=189 emitted=189 bytes_in=2097154000 bytes_out=5714 peak_php=16781312 opcache=1 jit_on=1 jit_used=2416 outcome=accepted out_sha=ba968fab0d89bc4f
+RAW kind=timed workload=oversized-bound impl=jsonfuse mode=jit run=9 warmups=3 wall_s=4.77 user_s=3.33 sys_s=1.44 maxrss_kb=28080 ns=1184769252 read=2000 matched=189 emitted=189 bytes_in=2097154000 bytes_out=5714 peak_php=16781312 opcache=1 jit_on=1 jit_used=2416 outcome=accepted out_sha=ba968fab0d89bc4f
+RAW kind=timed workload=oversized-bound impl=jsonfuse mode=jit run=10 warmups=3 wall_s=4.74 user_s=3.31 sys_s=1.43 maxrss_kb=28080 ns=1185079763 read=2000 matched=189 emitted=189 bytes_in=2097154000 bytes_out=5714 peak_php=16781312 opcache=1 jit_on=1 jit_used=2416 outcome=accepted out_sha=ba968fab0d89bc4f
+RAW kind=rss workload=oversized-bound impl=jsonfuse mode=jit run=1 warmups=0 wall_s=1.20 user_s=0.85 sys_s=0.34 maxrss_kb=28080 ns=1184139964 read=2000 matched=189 emitted=189 bytes_in=2097154000 bytes_out=5714 peak_php=16781312 opcache=1 jit_on=1 jit_used=2416 outcome=accepted out_sha=ba968fab0d89bc4f
+RAW kind=rss workload=oversized-bound impl=jsonfuse mode=jit run=2 warmups=0 wall_s=1.21 user_s=0.85 sys_s=0.35 maxrss_kb=28080 ns=1194937952 read=2000 matched=189 emitted=189 bytes_in=2097154000 bytes_out=5714 peak_php=16781312 opcache=1 jit_on=1 jit_used=2416 outcome=accepted out_sha=ba968fab0d89bc4f
+RAW kind=rss workload=oversized-bound impl=jsonfuse mode=jit run=3 warmups=0 wall_s=1.18 user_s=0.82 sys_s=0.36 maxrss_kb=28080 ns=1173051571 read=2000 matched=189 emitted=189 bytes_in=2097154000 bytes_out=5714 peak_php=16781312 opcache=1 jit_on=1 jit_used=2416 outcome=accepted out_sha=ba968fab0d89bc4f
+EQUIV workload=oversized-bound all outputs byte-identical sha=ba968fab0d89bc4f
+BOUND OK workload=oversized-bound maxrss_kb=28080 bound_kb=96324 input_bytes=2097154000

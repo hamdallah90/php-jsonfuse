@@ -1,0 +1,15 @@
+ENV php=8.3.36 nts=yes debug=no
+ENV arch=x86_64 kernel=6.8.0-1064-nvidia nproc=1 mem_kb=232955408
+ENV cpu=Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz governor=unknown
+ENV compiler=cc (Debian 14.2.0-19) 14.2.0
+ENV ext_cflags=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+ENV commit=1a1fddd846756530e8307ab691bf69ef4484617d dirty_paths=0 base_image=php@sha256:628102249d93494233b54490b785f12db9cd60f4dc89416dfca15973f2125f10
+ENV jsonfuse=0.1.0-alpha.1 yyjson=0.13.0
+ENV simdjson=4.0.0 fastjson=0.10.2 json_machine=1.2.6
+ENV fixtures=docker-volume (page cache warm after first read; cold cache is NOT established) output=tmpfs
+RUNCONFIG php=8.3 runs=3 warmups=1 rss_runs=1 modes=jit impls=jsonmachine seed=20261109
+RAW kind=timed workload=wide-100k-10 impl=jsonmachine mode=jit run=1 warmups=1 wall_s=14.55 user_s=14.48 sys_s=0.07 maxrss_kb=27360 ns=7232816580 read=100000 matched=10137 emitted=10137 bytes_in=230592874 bytes_out=676356 peak_php=2097152 opcache=1 jit_on=1 jit_used=28896 out_sha=8a3f6b97527eb3db
+RAW kind=timed workload=wide-100k-10 impl=jsonmachine mode=jit run=2 warmups=1 wall_s=14.64 user_s=14.59 sys_s=0.04 maxrss_kb=27360 ns=7275010714 read=100000 matched=10137 emitted=10137 bytes_in=230592874 bytes_out=676356 peak_php=2097152 opcache=1 jit_on=1 jit_used=28896 out_sha=8a3f6b97527eb3db
+RAW kind=timed workload=wide-100k-10 impl=jsonmachine mode=jit run=3 warmups=1 wall_s=14.70 user_s=14.62 sys_s=0.08 maxrss_kb=27360 ns=7312131491 read=100000 matched=10137 emitted=10137 bytes_in=230592874 bytes_out=676356 peak_php=2097152 opcache=1 jit_on=1 jit_used=28896 out_sha=8a3f6b97527eb3db
+RAW kind=rss workload=wide-100k-10 impl=jsonmachine mode=jit run=1 warmups=0 wall_s=7.38 user_s=7.34 sys_s=0.03 maxrss_kb=27360 ns=7373377119 read=100000 matched=10137 emitted=10137 bytes_in=230592874 bytes_out=676356 peak_php=2097152 opcache=1 jit_on=1 jit_used=28496 out_sha=8a3f6b97527eb3db
+EQUIV workload=wide-100k-10 all outputs byte-identical sha=8a3f6b97527eb3db

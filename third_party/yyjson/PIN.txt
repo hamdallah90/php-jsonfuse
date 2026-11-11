@@ -1,0 +1,6 @@
+library:  yyjson
+tag:      0.13.0
+source:   https://github.com/ibireme/yyjson/archive/refs/tags/0.13.0.tar.gz
+sha256:   34e0f62a2bc11ab20d601e8ca1cc2b2079503aa45119a19133d89d19b94a0fae  (release tarball)
+license:  MIT (see LICENSE, Copyright (c) 2020 YaoYuan)
+vendored: src/yyjson.c, src/yyjson.h, LICENSE, unmodified.

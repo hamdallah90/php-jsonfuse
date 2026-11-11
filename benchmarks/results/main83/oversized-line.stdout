@@ -1,0 +1,10 @@
+ENV php=8.3.36 nts=yes debug=no
+ENV arch=x86_64 kernel=6.8.0-1064-nvidia nproc=1 mem_kb=232955408
+ENV cpu=Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz governor=unknown
+ENV compiler=cc (Debian 14.2.0-19) 14.2.0
+ENV ext_cflags=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+ENV commit=1a1fddd846756530e8307ab691bf69ef4484617d dirty_paths=0 base_image=php@sha256:628102249d93494233b54490b785f12db9cd60f4dc89416dfca15973f2125f10
+ENV jsonfuse=0.1.0-alpha.1 yyjson=0.13.0
+ENV simdjson=4.0.0 fastjson=0.10.2 json_machine=1.2.6
+ENV fixtures=docker-volume (page cache warm after first read; cold cache is NOT established) output=tmpfs
+RUNCONFIG php=8.3 runs=10 warmups=3 rss_runs=3 modes=nojit,jit impls=jsonfuse,php,simdjson,fastjson seed=20261109

@@ -1,0 +1,15 @@
+narrow-1m-1 rc=0
+narrow-1m-10 rc=0
+narrow-1m-90 rc=0
+oversized-line rc=255
+oversized-bound rc=0
+wide-100k-10 rc=0
+wide-100k-90 rc=0
+narrow-100k-10 rc=0
+narrow-100k-90 rc=0
+narrow-100k-1 rc=0
+wide-100k-1 rc=0
+wide-1m-1 rc=0
+wide-1m-10 rc=0
+wide-1m-90 rc=0
+ALLDONE

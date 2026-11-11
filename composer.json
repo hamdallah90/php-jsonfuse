@@ -1,0 +1,25 @@
+{
+    "name": "hamdallah90/jsonfuse",
+    "type": "php-ext",
+    "description": "One-call NDJSON validate, filter and project pipeline for PHP, native and bounded in memory.",
+    "keywords": [
+        "ndjson",
+        "json",
+        "etl",
+        "filter",
+        "php-extension",
+        "pie"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=8.3 <8.7"
+    },
+    "php-ext": {
+        "extension-name": "jsonfuse",
+        "support-zts": true,
+        "os-families": [
+            "linux",
+            "darwin"
+        ]
+    }
+}

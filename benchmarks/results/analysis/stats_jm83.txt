@@ -1,0 +1,4 @@
+R narrow-100k-10 jsonmachine jit n=1 rss_med_kb=27360 rss_max_kb=27360
+R wide-100k-10 jsonmachine jit n=1 rss_med_kb=27360 rss_max_kb=27360
+T narrow-100k-10 jsonmachine jit n=3 med_ns=571478758 p95_ns=636642645 min_ns=571086229 max_ns=636642645 recs=100000 rps=174985
+T wide-100k-10 jsonmachine jit n=3 med_ns=7275010714 p95_ns=7312131491 min_ns=7232816580 max_ns=7312131491 recs=100000 rps=13746

@@ -1,0 +1,56 @@
+R narrow-100k-1 fastjson jit n=3 rss_med_kb=27120 rss_max_kb=27120
+R narrow-100k-1 fastjson nojit n=3 rss_med_kb=26160 rss_max_kb=26400
+R narrow-100k-1 jsonfuse jit n=3 rss_med_kb=26880 rss_max_kb=26880
+R narrow-100k-1 php jit n=3 rss_med_kb=26880 rss_max_kb=26880
+R narrow-100k-1 php nojit n=3 rss_med_kb=25920 rss_max_kb=25920
+R narrow-100k-1 simdjson jit n=3 rss_med_kb=28560 rss_max_kb=28560
+R narrow-100k-1 simdjson nojit n=3 rss_med_kb=27360 rss_max_kb=27600
+R narrow-100k-10 fastjson jit n=3 rss_med_kb=27120 rss_max_kb=27120
+R narrow-100k-10 fastjson nojit n=3 rss_med_kb=26400 rss_max_kb=26400
+R narrow-100k-10 jsonfuse jit n=3 rss_med_kb=26880 rss_max_kb=26880
+R narrow-100k-10 php jit n=3 rss_med_kb=26640 rss_max_kb=26640
+R narrow-100k-10 php nojit n=3 rss_med_kb=25920 rss_max_kb=25920
+R narrow-100k-10 simdjson jit n=3 rss_med_kb=28560 rss_max_kb=28560
+R narrow-100k-10 simdjson nojit n=3 rss_med_kb=27360 rss_max_kb=27600
+R narrow-1m-1 fastjson jit n=3 rss_med_kb=27120 rss_max_kb=27120
+R narrow-1m-1 fastjson nojit n=3 rss_med_kb=26160 rss_max_kb=26400
+R narrow-1m-1 jsonfuse jit n=3 rss_med_kb=26640 rss_max_kb=26880
+R narrow-1m-1 php jit n=3 rss_med_kb=26880 rss_max_kb=26880
+R narrow-1m-1 php nojit n=3 rss_med_kb=25920 rss_max_kb=26160
+R narrow-1m-1 simdjson jit n=3 rss_med_kb=28560 rss_max_kb=28800
+R narrow-1m-1 simdjson nojit n=3 rss_med_kb=27360 rss_max_kb=27600
+R narrow-1m-10 fastjson jit n=3 rss_med_kb=27120 rss_max_kb=27120
+R narrow-1m-10 fastjson nojit n=3 rss_med_kb=26400 rss_max_kb=26400
+R narrow-1m-10 jsonfuse jit n=3 rss_med_kb=26880 rss_max_kb=26880
+R narrow-1m-10 php jit n=3 rss_med_kb=26880 rss_max_kb=26880
+R narrow-1m-10 php nojit n=3 rss_med_kb=25920 rss_max_kb=26160
+R narrow-1m-10 simdjson jit n=3 rss_med_kb=28320 rss_max_kb=28800
+R narrow-1m-10 simdjson nojit n=3 rss_med_kb=27600 rss_max_kb=27840
+T narrow-100k-1 fastjson jit n=10 med_ns=47923248 p95_ns=48510271 min_ns=47608823 max_ns=48510271 recs=100000 rps=2086670
+T narrow-100k-1 fastjson nojit n=10 med_ns=57362093 p95_ns=77881313 min_ns=56819941 max_ns=77881313 recs=100000 rps=1743312
+T narrow-100k-1 jsonfuse jit n=10 med_ns=23064805 p95_ns=23507133 min_ns=22583510 max_ns=23507133 recs=100000 rps=4335610
+T narrow-100k-1 php jit n=10 med_ns=84988354 p95_ns=125092329 min_ns=83853486 max_ns=125092329 recs=100000 rps=1176632
+T narrow-100k-1 php nojit n=10 med_ns=95450028 p95_ns=150327283 min_ns=93435348 max_ns=150327283 recs=100000 rps=1047669
+T narrow-100k-1 simdjson jit n=10 med_ns=53378373 p95_ns=63827317 min_ns=52921262 max_ns=63827317 recs=100000 rps=1873418
+T narrow-100k-1 simdjson nojit n=10 med_ns=63305770 p95_ns=117302135 min_ns=62170524 max_ns=117302135 recs=100000 rps=1579635
+T narrow-100k-10 fastjson jit n=10 med_ns=52458676 p95_ns=83007964 min_ns=51020741 max_ns=83007964 recs=100000 rps=1906262
+T narrow-100k-10 fastjson nojit n=10 med_ns=61441559 p95_ns=62849088 min_ns=59977656 max_ns=62849088 recs=100000 rps=1627563
+T narrow-100k-10 jsonfuse jit n=10 med_ns=24012784 p95_ns=24323585 min_ns=23564132 max_ns=24323585 recs=100000 rps=4164448
+T narrow-100k-10 php jit n=10 med_ns=93185577 p95_ns=135666546 min_ns=91357693 max_ns=135666546 recs=100000 rps=1073127
+T narrow-100k-10 php nojit n=10 med_ns=102606924 p95_ns=112410465 min_ns=99571330 max_ns=112410465 recs=100000 rps=974593
+T narrow-100k-10 simdjson jit n=10 med_ns=60729584 p95_ns=104311548 min_ns=59549108 max_ns=104311548 recs=100000 rps=1646644
+T narrow-100k-10 simdjson nojit n=10 med_ns=71830111 p95_ns=77763233 min_ns=69110956 max_ns=77763233 recs=100000 rps=1392174
+T narrow-1m-1 fastjson jit n=5 med_ns=481104201 p95_ns=534594303 min_ns=477451096 max_ns=534594303 recs=1000000 rps=2078552
+T narrow-1m-1 fastjson nojit n=5 med_ns=572213537 p95_ns=572622073 min_ns=571904872 max_ns=572622073 recs=1000000 rps=1747599
+T narrow-1m-1 jsonfuse jit n=5 med_ns=230770921 p95_ns=276935190 min_ns=229125299 max_ns=276935190 recs=1000000 rps=4333302
+T narrow-1m-1 php jit n=5 med_ns=906111450 p95_ns=991085253 min_ns=847482549 max_ns=991085253 recs=1000000 rps=1103617
+T narrow-1m-1 php nojit n=5 med_ns=954477556 p95_ns=1009050288 min_ns=938619025 max_ns=1009050288 recs=1000000 rps=1047694
+T narrow-1m-1 simdjson jit n=5 med_ns=535372715 p95_ns=613362467 min_ns=532907235 max_ns=613362467 recs=1000000 rps=1867858
+T narrow-1m-1 simdjson nojit n=5 med_ns=634347119 p95_ns=691149823 min_ns=625694116 max_ns=691149823 recs=1000000 rps=1576424
+T narrow-1m-10 fastjson jit n=5 med_ns=522797776 p95_ns=570734438 min_ns=520243584 max_ns=570734438 recs=1000000 rps=1912785
+T narrow-1m-10 fastjson nojit n=5 med_ns=613483850 p95_ns=619967779 min_ns=611688754 max_ns=619967779 recs=1000000 rps=1630035
+T narrow-1m-10 jsonfuse jit n=5 med_ns=245156852 p95_ns=254148764 min_ns=242796321 max_ns=254148764 recs=1000000 rps=4079021
+T narrow-1m-10 php jit n=5 med_ns=973456609 p95_ns=981241242 min_ns=928483649 max_ns=981241242 recs=1000000 rps=1027267
+T narrow-1m-10 php nojit n=5 med_ns=1033181861 p95_ns=1111560800 min_ns=1011682692 max_ns=1111560800 recs=1000000 rps=967884
+T narrow-1m-10 simdjson jit n=5 med_ns=613822116 p95_ns=658301472 min_ns=597524456 max_ns=658301472 recs=1000000 rps=1629136
+T narrow-1m-10 simdjson nojit n=5 med_ns=720662891 p95_ns=750686031 min_ns=692290325 max_ns=750686031 recs=1000000 rps=1387611

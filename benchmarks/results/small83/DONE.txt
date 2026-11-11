@@ -1,0 +1,7 @@
+narrow-10k-1 rc=0
+narrow-10k-90 rc=0
+narrow-10k-10 rc=0
+wide-10k-10 rc=0
+wide-10k-90 rc=0
+wide-10k-1 rc=0
+ALLDONE

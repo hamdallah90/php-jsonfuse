@@ -1,0 +1,7 @@
+Noise rule (declared before any timed run, 2026-11-09):
+1. Statistic: median of timed runs per configuration; p95 reported (nearest-rank). All samples kept in raw.log. No sample is discarded.
+2. A configuration is "noisy" if max/median > 1.25 or (p95-min)/median > 0.25 over its timed runs.
+3. A ratio is "stable" if neither the JsonFuse configuration nor the best-baseline configuration is noisy.
+4. Any workload whose ratio vs best PHP baseline is in [1.6, 2.4] (within 20% of 2x), or whose ratio uses a noisy configuration and decides the headline, is re-run isolated (one job, no other benchmark running, CPUs 0-9 only) and the isolated result replaces the parallel result.
+5. Parallel run: up to 8 jobs, one per distinct core of CPUs 0-9; other tenant benchmark runs on CPUs 10-29 and cannot be controlled (load recorded in uptime snapshots).
+6. Best baseline per workload = the PHP baseline configuration (impl x {nojit,jit}) with the lowest median wall time.
